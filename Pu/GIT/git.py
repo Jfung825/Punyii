@@ -9,6 +9,16 @@ class NPC:
         print(f"HP {self.hp}",end=" ")
         print(f"Mana {self.mana}",end=" \n")
 
+    def damage(self,damage):
+        if self.mana <= 0:
+            print("Not enough mana")
+            return
+        self.hp -= damage
+        self.mana -= damage
+        print(f"{self.name} HP got -{damage}")
+    
+
+
 n1 = NPC("A",100,100)
 n2 = NPC("B",500,200)
 n3 = NPC("C",1000,1000)
