@@ -24,5 +24,8 @@ n2 = NPC("B",500,200)
 n3 = NPC("C",1000,1000)
 
 n1.describe()
+n1.damage(10)
+n1.damage(10)
+n1.describe()
 n2.describe()
 n3.describe()
